@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="content-container" style="display: none;">
+        <h1>TODO APP</h1>
+        <div style="display: flex; gap: 20px;">
+            <input type="text" id="todo-input">
+            <button id="add-todo-btn"">Add todo</button>
+        </div>
+        <ul id="todo-container"></ul>
+    <button id="logout">logout</button>
+
+    </div>
+    <div class="loader-container" id="loadercontainer" style="display: block;">
+        <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+            <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+            <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+            <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+            <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+        </svg>
+    </div>
+
+    <div class="container" id="signup-container">
+        <h1>Sign Up</h1>
+        <label for="">User Name :</label><input type="text" name="" id="signup-user-name" placeholder="Enter your name"> <br>
+        <label for="">E-mail :</label><input type="email" name="" id="signup-user-Email" placeholder="Enter Email"> <br>
+        <label for="">Password :</label><input type="password" name="" id="signup-user-password" placeholder="Enter password"> <br>
+        <button id="signup-btn">Submit</button>
+    </div>
+<br>
+
+    <div class="container" id="login-container">
+        <h1>Login</h1>
+        <label for="">User Name :</label><input type="text" name="" id="login-user-name" placeholder="Enter your name"> <br>
+        <label for="">E-mail :</label><input type="email" name="" id="login-user-Email" placeholder="Enter Email"> <br>
+        <label for="">Password :</label><input type="password" name="" id="login-user-password" placeholder="Enter password"> <br>
+        <button id="login-btn">Submit</button>
+    </div>
+
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
